@@ -47,6 +47,15 @@ const esPrimo = (number) => {
   return true;
 };
 
+function esPrimo(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(esPrimo(53));
 function pintarArray(array) {
   let midArray = "";
   for (let i = 0; i <= array.length - 1; i++) {
